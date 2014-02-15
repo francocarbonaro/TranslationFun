@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class TranslationServices;
+
 @interface ViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UITextField *textToTranslateTextField;
+@property (weak, nonatomic) IBOutlet UILabel *translatedTextLabel;
+@property (weak, nonatomic) IBOutlet UIButton *translateButton;
+
+- (IBAction)translateButtonTouched:(id)sender;
+
+- (TranslationServices *)service;
 
 @end
